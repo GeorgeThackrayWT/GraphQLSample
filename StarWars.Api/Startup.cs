@@ -47,6 +47,7 @@ namespace StarWars.Api
             services.AddTransient<IDroidRepository, DroidRepository>();
             services.AddTransient<IHumanRepository, HumanRepository>();
             services.AddTransient<IEpisodeRepository, EpisodeRepository>();
+      //      services.AddTransient<ISafetyStore, SafetyStore>();
             if (Env.IsEnvironment("Test"))
             {
                 services.AddDbContext<StarWarsContext>(options =>

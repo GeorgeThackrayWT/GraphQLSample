@@ -19,6 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ed.Stores2\Ed.Stores2.csproj" />
+    <ProjectReference Include="..\ED\Abstractions\Abstractions\WT.ED.Abstractions.csproj" />
+    <ProjectReference Include="..\ED\DataObjects\WT.ED.DTOs.csproj" />
+    <ProjectReference Include="..\ED\EDCORE\WT.ED.Models.csproj" />
+    <ProjectReference Include="..\ED\Utils\WT.ED.Libs.csproj" />
     <ProjectReference Include="..\StarWars.Core\StarWars.Core.csproj" />
     <ProjectReference Include="..\StarWars.Data\StarWars.Data.csproj" />
   </ItemGroup>
