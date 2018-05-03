@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{3058DDB7-7C21-4DE3-85A1-DDFE9CF84EC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EDCORE</RootNamespace>
+    <AssemblyName>EDCORE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\BindableBase.cs" />
+    <Compile Include="Helpers\BooleanToValueConverter.cs" />
+    <Compile Include="Helpers\cmbFilter.cs" />
+    <Compile Include="Helpers\ComboLookups.cs" />
+    <Compile Include="Helpers\DelegateCommand.cs" />
+    <Compile Include="Helpers\EdEvent.cs" />
+    <Compile Include="Helpers\EdMessage.cs" />
+    <Compile Include="Helpers\ExtObservableRangeCollection.cs" />
+    <Compile Include="Helpers\INavigation.cs" />
+    <Compile Include="Helpers\IPageLookup.cs" />
+    <Compile Include="Helpers\ISubscriber.cs" />
+    <Compile Include="Helpers\IMenuFormatter.cs" />
+    <Compile Include="Helpers\MessageFilter.cs" />
+    <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Helpers\StateContainer.cs" />
+    <Compile Include="Helpers\UserPermissions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Administration\AdminDocumentsModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminExpenditureProductsModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminFundedProjectSitesModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminGeneralDetailsModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminIncomeProductsModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminLookupEditorModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminReportsModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminUsersAndGroupsModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminVATCodesModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminVATRateLocksModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminWorkProgrammeModel.cs" />
+    <Compile Include="ViewModel\Administration\AdminWTFLSitesModel.cs" />
+    <Compile Include="ViewModel\AdministrativeAreaModel.cs" />
+    <Compile Include="ViewModel\BaseClasses\EditorModelBase.cs" />
+    <Compile Include="ViewModel\BaseClasses\FlipModelBase.cs" />
+    <Compile Include="Helpers\FocusParser.cs" />
+    <Compile Include="Helpers\PleaseWaitHelper.cs" />
+    <Compile Include="ViewModel\BaseClasses\SearchModelBase.cs" />
+    <Compile Include="ViewModel\Cache.cs" />
+    <Compile Include="ViewModel\DcoumentsModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\VBoolBoxModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\VComboBoxModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\VDatePickerModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\VDoubleBoxModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\VIntBoxModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\VTextBoxModel.cs" />
+    <Compile Include="ViewModel\Fabric\HiddenPanel.cs" />
+    <Compile Include="ViewModel\InternalAudits\InternalAuditEditModel.cs" />
+    <Compile Include="ViewModel\InternalAudits\InternalAuditObservationsModel.cs" />
+    <Compile Include="ViewModel\InternalAudits\InternalAuditSearchModel.cs" />
+    <Compile Include="Helpers\IPlatformEventHandling.cs" />
+    <Compile Include="ViewModel\InternalAudits\InternalAuditWoodListModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\AdminListEditModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CAAnimalDamagedModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CADeadWoodModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CAFloraModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CAHumanImpactshModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CAInvasivesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\CAKFSummariesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CALevelOfShrubRegenerationModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CALevelOfTreeRegenerationModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CAOverallStructureModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CARegenerationShrubSpeciesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\CAStrataSummariesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CARegenerationTreeSpeciesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CAShrubSpeciesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CATreeAgesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CATreeHealthModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\SubScreens\CATreeSpeciesModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\ConditionAssessmentEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\EditScreens\ConditionalAssessment\ConditionAssessmentFormEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\GrantContractsEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\HarvestingEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\MonitoringEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\ObjectivesKfEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\PesticideEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\PurchaseOrderEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\ReferenceInformationModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SalesOrderEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\AdminListSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\ConditionAssessmentSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\GrantContractsSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\HarvestingSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\MonitoringSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\ObjectivesKfSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\PurchaseOrdersSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\ReferenceInformationSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\SalesOrdersSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\SummaryDescriptionSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SearchScreens\WorkProgrammeSearchModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\SummaryDescriptionEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\TenderEditorModel.cs" />
+    <Compile Include="ViewModel\ManagementUnitSideBarModel.cs" />
+    <Compile Include="ViewModel\MapsModel.cs" />
+    <Compile Include="Helpers\MenuItem.cs" />
+    <Compile Include="Helpers\PlatformEventHandling.cs" />
+    <Compile Include="ViewModel\Property\AcquisitionEditModel.cs" />
+    <Compile Include="ViewModel\Property\EvaluationModel.cs" />
+    <Compile Include="ViewModel\Property\ExternalDesignationsModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Basic\SubAcquisitionUnitModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\BoundariesPlansModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\ContactsModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\DirectoryInfoModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\DrainageRatesModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\FundingModel.cs" />
+    <Compile Include="ViewModel\BaseClasses\ManagementPlanEditBase.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\LicenseModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\PartDisposals.cs" />
+    <Compile Include="ViewModel\BaseClasses\PropertyBase.cs" />
+    <Compile Include="ViewModel\Property\InternalDesignationsModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyEditModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\PublicRightsOfWayModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\StructuresModel.cs" />
+    <Compile Include="ViewModel\Property\PropertyInfos\Complex\ThirdPartyRights.cs" />
+    <Compile Include="ViewModel\Property\PropertyModel.cs" />
+    <Compile Include="ViewModel\ManagementPlans\WorkProgrammeEditorModel.cs" />
+    <Compile Include="ViewModel\PublicInformation\Editors\PublicInfoEditorModel.cs" />
+    <Compile Include="ViewModel\PublicInformation\PublicInformationSearchModel.cs" />
+    <Compile Include="ViewModel\ReportsModel.cs" />
+    <Compile Include="ViewModel\Safety\Editors\SafetyActionModel.cs" />
+    <Compile Include="ViewModel\Safety\Editors\SafetyBioRiskModel.cs" />
+    <Compile Include="ViewModel\Safety\Editors\SafetyFireRiskModel.cs" />
+    <Compile Include="ViewModel\Safety\Editors\SafetyFurtherActionsModel.cs" />
+    <Compile Include="ViewModel\Safety\Editors\SafetyEditorModel.cs" />
+    <Compile Include="ViewModel\Safety\Editors\SafetyIncidentModel.cs" />
+    <Compile Include="ViewModel\TreePlanting\Editors\TreePlantingDedicationsModel.cs" />
+    <Compile Include="ViewModel\TreePlanting\Editors\TreePlantingSitesModel.cs" />
+    <Compile Include="ViewModel\Safety\SafetySearchModel.cs" />
+    <Compile Include="ViewModel\Fabric\ApplicationContainerModel.cs" />
+    <Compile Include="ViewModel\TaskSearchModel.cs" />
+    <Compile Include="ViewModel\TreePlanting\Editors\TreePlantingEditorModel.cs" />
+    <Compile Include="ViewModel\TreePlanting\TreePlantingSearchModel.cs" />
+    <Compile Include="ViewModel\BaseClasses\GeneralModelBase.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\ToolBarModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\NavOptionsModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\WTComboBoxModel.cs" />
+    <Compile Include="ViewModel\Fabric\Controls\WTDatePicker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FreshIOC, Version=1.0.6071.17008, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.2.2.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\FreshIOC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FreshMvvm, Version=1.0.6071.17008, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.2.2.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\FreshMvvm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmHelpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Refractored.MvvmHelpers.1.3.0.28-beta\lib\netstandard1.0\MvvmHelpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.45\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.45\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.45\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Abstractions\Abstractions\WT.ED.Abstractions.csproj">
+      <Project>{34cd3102-0946-4580-9e55-c28c60441ff4}</Project>
+      <Name>WT.ED.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataObjects\WT.ED.DTOs.csproj">
+      <Project>{84f2211d-e47c-449c-a86b-09d7bbd75849}</Project>
+      <Name>WT.ED.DTOs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\WT.ED.Libs.csproj">
+      <Project>{05a3fcd3-b6be-4003-b69e-7711b10033c7}</Project>
+      <Name>WT.ED.Libs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+</Project>

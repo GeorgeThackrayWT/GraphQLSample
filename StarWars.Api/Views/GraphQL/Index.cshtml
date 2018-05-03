@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>GraphiQL</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+    <script src="~/Scripts/test.js" type="text/javascript"></script>
+    <script src="~/Scripts/highlight.pack.js" type="text/javascript"></script>
+    <script src="~/Scripts/testlib.js" type="text/javascript"></script>
+    <script>
+
+
+
+        function basicTest(testLib) {
+
+            var u = testLib.getUrl();
+
+            var url = u + $("#serviceAddress").val();
+
+            var data = testLib.getData();
+
+            testLib.reset();
+
+            testLib.writeLine('URL', url);
+
+            testLib.writeLine('DATA', data);
+
+            testLib.ajaxpost(url, data);
+
+        }
+
+
+
+
+
+        $(document).ready(function () {
+            $("#serviceAddress").val('graphql');
+
+            var testLib = new TestLib();
+            testLib.loadUrl();
+
+            $("#checkquery").click(function (e) {
+                resetStyling();
+                basicTest(testLib);
+                e.preventDefault();
+            });
+    
+        });
+    </script>
+
+
+    
+</head>
+
+
+
+<body>
+<div id="app"></div>
+
+<b>Simple Tester</b>
+ 
+
+<div class="row">
+    <div class="col-sm-12" style="font-size: medium; font-weight: bold; margin-bottom: 15px;">Diagnostic Checks</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6"><input type="text" id="serviceAddress" value="" style="width: 600px; margin-bottom: 15px;"></div>
+    <div class="col-sm-6"><textarea id="serviceData" rows="3" cols="40"></textarea></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4"><a id='checkquery' href=''>Basic Test</a></div>
+    <div class="col-sm-4"><a id='checkUserLookup' href=''>xx</a></div>
+    <div class="col-sm-4"><a id='checkDBAccess' href=''>xx</a></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4"><a id='checkLoggingRead' href=''>xx</a></div>
+    <div class="col-sm-4"><a id='checkLoggingWrite' href=''>xx</a></div>
+    <div class="col-sm-4"><a id='checkspacestate' href=''>xx</a></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12"><textarea id="result" rows="5" style="width: 100%; resize: horizontal;"></textarea></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12"><pre><code id="prettyResult" class="json" style="width: 1024px;"></code></pre></div>
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

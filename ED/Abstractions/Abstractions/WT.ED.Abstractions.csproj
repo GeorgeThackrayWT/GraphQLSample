@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{34CD3102-0946-4580-9E55-C28C60441FF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Abstractions</RootNamespace>
+    <AssemblyName>Abstractions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\INavCouple.cs" />
+    <Compile Include="Helpers\IPageMessageBus.cs" />
+    <Compile Include="IManagementUnitSideBarModel.cs" />
+    <Compile Include="Models\Admin\IAdminDocumentsModel.cs" />
+    <Compile Include="Models\Admin\IAdminExpenditureProductsModel.cs" />
+    <Compile Include="Models\Admin\IAdminFundedProjectSitesModel.cs" />
+    <Compile Include="Models\Admin\IAdminGeneralDetailsModel.cs" />
+    <Compile Include="Models\Admin\IAdminIncomeProductsModel.cs" />
+    <Compile Include="Models\Admin\IAdministrativeAreaModel.cs" />
+    <Compile Include="Models\Admin\IAdminLookupEditorModel.cs" />
+    <Compile Include="Models\Admin\IAdminReportsModel.cs" />
+    <Compile Include="Models\Admin\IAdminUsersAndGroupsModel.cs" />
+    <Compile Include="Models\Admin\IAdminVATCodesModel.cs" />
+    <Compile Include="Models\Admin\IAdminVatRateLocksModel.cs" />
+    <Compile Include="Models\Admin\IAdminWorkProgrammeModel.cs" />
+    <Compile Include="Models\Admin\IAdminWTFLSitesModel.cs" />
+    <Compile Include="Models\IDocumentsModel.cs" />
+    <Compile Include="Models\IMapsModel.cs" />
+    <Compile Include="Models\IReportsModel.cs" />
+    <Compile Include="Models\Controls\IVBoolBoxModel.cs" />
+    <Compile Include="Models\Controls\IVComboBoxModel.cs" />
+    <Compile Include="Models\Controls\IVDatePickerModel.cs" />
+    <Compile Include="Models\Controls\IVDoubleBoxModel.cs" />
+    <Compile Include="Models\Controls\IVIntBoxModel.cs" />
+    <Compile Include="Models\Controls\IVTextBoxModel.cs" />
+    <Compile Include="Models\IAcquisitionEditModel.cs" />
+    <Compile Include="Models\IApplicationContainerModel.cs" />
+    <Compile Include="Models\IPurchaseOrdersSearchModel.cs" />
+    <Compile Include="Models\ISalesOrdersSearchModel.cs" />
+    <Compile Include="Models\Controls\IToolBarModel.cs" />
+    <Compile Include="Models\InternalAudits\IInternalAuditEditorModel.cs" />
+    <Compile Include="Models\InternalAudits\IInternalAuditObservationsModel.cs" />
+    <Compile Include="Models\InternalAudits\IInternalAuditWoodListModel.cs" />
+    <Compile Include="Models\IUserLookup.cs" />
+    <Compile Include="Models\IUserPermissions.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICAAnimalDamageModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICADeadWoodModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICAFloraModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICAHumanImpactshModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICAInvasivesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICALevelOfShrubRegenerationModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICALevelOfTreeRegenerationModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICARegenerationShrubSpeciesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\IConditionalAssessmentBase.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\KFSummaries\ICAKFSummariesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICAOverallStructureModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\StrataSummaries\ICAStrataSummariesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICARegenerationTreeSpeciesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICAShrubSpeciesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICATreeHealthModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICATreeSpeciesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\IConditionAssessmentFormEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\ConditionalAssessmentForm\ICTreeAgesModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IPesticideEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ITenderEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\IPropertySearch.cs" />
+    <Compile Include="Models\PublicInformation\IPublicInfoEditorModel.cs" />
+    <Compile Include="Models\PublicInformation\IPublicInformationSearch.cs" />
+    <Compile Include="Models\Safety\Editors\ISafetyBioRiskModel.cs" />
+    <Compile Include="Models\Safety\Editors\ISafetyFurtherActionsModel.cs" />
+    <Compile Include="Models\Safety\Editors\ISafetyActionModel.cs" />
+    <Compile Include="Models\Safety\Editors\ISafetyEditorModel.cs" />
+    <Compile Include="Models\Safety\Editors\ISafetyFireRiskModel.cs" />
+    <Compile Include="Models\Safety\Editors\ISafetyIncidentModel.cs" />
+    <Compile Include="Models\TreePlanting\ITreePlantingDedicationsModel.cs" />
+    <Compile Include="Models\TreePlanting\ITreePlantingSitesModel.cs" />
+    <Compile Include="Models\TreePlanting\Editors\ITreePlantingEditorModel.cs" />
+    <Compile Include="Models\TreePlanting\ITreePlantingModel.cs" />
+    <Compile Include="Navigation\INavigation.cs" />
+    <Compile Include="Navigation\ILinkContainer.cs" />
+    <Compile Include="PlatformDependencies\IDialogService.cs" />
+    <Compile Include="Stores\Content\InternalAudits\IInternalAuditStore.cs" />
+    <Compile Include="Stores\Content\IMockData.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IAdminStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IBaseStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IConditionalAssessmentsStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IGrantStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IHarvestingStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IManagementPlanAdminEFStore.cs" />
+    <Compile Include="Stores\Content\ManagementUnits\IManagementUnitStore.cs" />
+    <Compile Include="Navigation\INavOptions.cs" />
+    <Compile Include="Models\Controls\IWTComboBoxModel.cs" />
+    <Compile Include="Models\Controls\IWTDatePickerModel.cs" />
+    <Compile Include="Helpers\IWTTimer.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IAdministrationEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ConditionAssessments\IConditionAssessmentEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IGrantContractsEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IHarvestingEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IMonitoringEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IObjectivesKfEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IPurchaseOrderEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IReferenceInformationModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ISalesOrderEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\ISummaryDescriptionEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\Editors\IWorkProgrammeEditorModel.cs" />
+    <Compile Include="Models\ManagementPlans\IGeneralManagementPlanSearchModel.cs" />
+    <Compile Include="Models\IBaseModel.cs" />
+    <Compile Include="Models\Propertys\IBoundariesPlansModel.cs" />
+    <Compile Include="ICache.cs" />
+    <Compile Include="Models\Propertys\IContactsModel.cs" />
+    <Compile Include="Models\Propertys\IDirectoryInfoModel.cs" />
+    <Compile Include="Models\Propertys\IDrainageRatesModel.cs" />
+    <Compile Include="Models\Propertys\IEvaluationModel.cs" />
+    <Compile Include="Models\Propertys\IExternalDesignationsModel.cs" />
+    <Compile Include="Models\Propertys\IFundingModel.cs" />
+    <Compile Include="Models\Propertys\IInternalDesignationsModel.cs" />
+    <Compile Include="Models\Propertys\ILicenseModel.cs" />
+    <Compile Include="Models\Propertys\IPartDisposalsModel.cs" />
+    <Compile Include="Models\Propertys\IPropertyEditModel.cs" />
+    <Compile Include="Models\Propertys\IPropertyModel.cs" />
+    <Compile Include="IPropInfoBase.cs" />
+    <Compile Include="Models\Propertys\IPublicRightsOfWayModel.cs" />
+    <Compile Include="Models\Propertys\IStructuresModel.cs" />
+    <Compile Include="PlatformDependencies\ITappedRouteEventHandler.cs" />
+    <Compile Include="Models\Propertys\IThirdPartyRightsModel.cs" />
+    <Compile Include="Models\Propertys\IWorkProgrammeEditorModel.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IMonitoringStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IObjectiveStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IPurchasesStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IReferenceInfoStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\ISalesStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\ISummaryStore.cs" />
+    <Compile Include="Stores\Content\Admin\IAdminStore.cs" />
+    <Compile Include="Stores\Content\Property\IDesignationStore.cs" />
+    <Compile Include="Stores\Content\PublicInformation\IPublicInformationStore.cs" />
+    <Compile Include="Stores\Content\Safety\ISafetyStore.cs" />
+    <Compile Include="Stores\Content\Safety\IUserStore.cs" />
+    <Compile Include="Stores\Content\TreePlanting\ITreePlanting.cs" />
+    <Compile Include="Stores\Fabric\ILookupStore.cs" />
+    <Compile Include="Stores\Content\ManagementPlans\IManagementPlanStore.cs" />
+    <Compile Include="Stores\Content\Property\IPropertyStore.cs" />
+    <Compile Include="Stores\Content\IRegionStore.cs" />
+    <Compile Include="PlatformDependencies\ITelerikConvertors.cs" />
+    <Compile Include="Stores\IBaseStore.cs" />
+    <Compile Include="Stores\Fabric\IMenuStore.cs" />
+    <Compile Include="PlatformDependencies\IDBPlatformSettings.cs" />
+    <Compile Include="Stores\Content\Tasks\ITaskStore.cs" />
+    <Compile Include="Stores\Fabric\IUserStore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataObjects\WT.ED.DTOs.csproj">
+      <Project>{84f2211d-e47c-449c-a86b-09d7bbd75849}</Project>
+      <Name>WT.ED.DTOs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utils\WT.ED.Libs.csproj">
+      <Project>{05a3fcd3-b6be-4003-b69e-7711b10033c7}</Project>
+      <Name>WT.ED.Libs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MvvmHelpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Refractored.MvvmHelpers.1.3.2.47-beta\lib\netstandard1.0\MvvmHelpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Tasks\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

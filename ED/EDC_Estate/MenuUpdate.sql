@@ -1,0 +1,12 @@
+﻿update [Estate].[dbo].[Menu] set [Destination] = 'admindocuments' where ID = 39
+update [Estate].[dbo].[Menu] set [Destination] = 'adminvatrates' where ID = 38
+update [Estate].[dbo].[Menu] set [Destination] = 'adminexpprod' where ID = 37
+update [Estate].[dbo].[Menu] set [Destination] = 'adminincprod' where ID = 36
+update [Estate].[dbo].[Menu] set [Destination] = 'adminfundsites' where ID = 35
+update [Estate].[dbo].[Menu] set [Destination] = 'adminwtfl' where ID = 34
+update [Estate].[dbo].[Menu] set [Destination] = 'adminlookupeditor' where ID = 33
+update [Estate].[dbo].[Menu] set [Destination] = 'adminvatcodes' where ID = 32
+update [Estate].[dbo].[Menu] set [Destination] = 'adminreports' where ID = 31
+update [Estate].[dbo].[Menu] set [Destination] = 'adminworkprog' where ID = 30
+update [Estate].[dbo].[Menu] set [Destination] = 'adminusers' where ID = 29
+update [Estate].[dbo].[Menu] set [Destination] = 'admingeneral' where ID = 28

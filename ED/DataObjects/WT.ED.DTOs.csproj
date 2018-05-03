@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{84F2211D-E47C-449C-A86B-09D7BBD75849}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DataObjects</RootNamespace>
+    <AssemblyName>DataObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BindableBase.cs" />
+    <Compile Include="CmbFilter.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminDocumentsDTO.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminExpenditureProductsDto.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminFundedProjectSitesDto.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminGeneralDetailsDto.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminIncomeProductsDTO.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminLookupEditorDTO.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminReportsDTO.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminVATCodeCollection.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminVATCodes.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminVATRateLocks.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminWorkProgrammeDTO.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminUserDto.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminUserGroupDto.cs" />
+    <Compile Include="DTOS\AdministrationArea\AdminWTFLSitesDTO.cs" />
+    <Compile Include="DTOS\AdministrationArea\SectionDescriptionDto.cs" />
+    <Compile Include="DTOS\DateOption.cs" />
+    <Compile Include="DTOS\DocumentDto.cs" />
+    <Compile Include="DTOS\InternalAudits\InternalAuditGradeLookup.cs" />
+    <Compile Include="DTOS\InternalAudits\InternalAuditsWoodlist.cs" />
+    <Compile Include="DTOS\InternalAudits\InternalAuditsEditDto.cs" />
+    <Compile Include="DTOS\InternalAudits\InternalAuditsObservationEditDto.cs" />
+    <Compile Include="DTOS\InternalAudits\InternalAuditsSearchDto.cs" />
+    <Compile Include="DTOS\LicenseDto.cs" />
+    <Compile Include="DTOS\LicenseDtos.cs" />
+    <Compile Include="DTOS\lookups\ActiveIngredientsDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyCommentsOnTermDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyFishingTypeDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyInterestLetDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyNoticeOfTerminationDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyPeriodDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyRentReviewDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancySizeInDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyTypeDto.cs" />
+    <Compile Include="DTOS\lookups\AIMDTOs.cs" />
+    <Compile Include="DTOS\lookups\ApplicationMethodDto.cs" />
+    <Compile Include="DTOS\lookups\ApplicationTypeDto.cs" />
+    <Compile Include="DTOS\lookups\CompartmentLookupDTO.cs" />
+    <Compile Include="DTOS\lookups\ConservationHistoricFeaturesDTO.cs" />
+    <Compile Include="DTOS\lookups\DesignationsDTO.cs" />
+    <Compile Include="DTOS\lookups\DisposedInterestDto.cs" />
+    <Compile Include="DTOS\lookups\AgTenancyAgreementDto.cs" />
+    <Compile Include="DTOS\lookups\FundingStatusDto.cs" />
+    <Compile Include="DTOS\lookups\GenericLookup.cs" />
+    <Compile Include="DTOS\lookups\GrantBodiesDTO.cs" />
+    <Compile Include="DTOS\lookups\GrantReferenceLookupDTO.cs" />
+    <Compile Include="DTOS\lookups\HarvestingObservationTypeDTO.cs" />
+    <Compile Include="DTOS\lookups\HarvestingOptionsDTO.cs" />
+    <Compile Include="DTOS\lookups\KeyFeatureCADTO.cs" />
+    <Compile Include="DTOS\lookups\KeyFeatureDTO.cs" />
+    <Compile Include="DTOS\lookups\MainSpeciesDTO.cs" />
+    <Compile Include="DTOS\lookups\MajorManagementConstraintsDTO.cs" />
+    <Compile Include="DTOS\lookups\ObservationTypeDTO.cs" />
+    <Compile Include="DTOS\lookups\ProductLookUpDTO.cs" />
+    <Compile Include="DTOS\lookups\PurchaseOrderDateOptionsDTO.cs" />
+    <Compile Include="DTOS\lookups\ReasonsForUseDTO.cs" />
+    <Compile Include="DTOS\lookups\RegimeDTO.cs" />
+    <Compile Include="DTOS\lookups\SalesOrderDateOptionsDTO.cs" />
+    <Compile Include="DTOS\lookups\SchemesDTO.cs" />
+    <Compile Include="DTOS\lookups\SiteClassificationDTO.cs" />
+    <Compile Include="DTOS\lookups\StratumDTO.cs" />
+    <Compile Include="DTOS\lookups\TargetSpeciesDto.cs" />
+    <Compile Include="DTOS\lookups\ThirdPartyAgreementTypeDto.cs" />
+    <Compile Include="DTOS\lookups\ApplicationDto.cs" />
+    <Compile Include="DTOS\lookups\CountyDto.cs" />
+    <Compile Include="DTOS\DateRangeFilter.cs" />
+    <Compile Include="DTOS\lookups\HighwayAuthorityDto.cs" />
+    <Compile Include="DTOS\lookups\ContactStatus.cs" />
+    <Compile Include="DTOS\lookups\FundingTypeDto.cs" />
+    <Compile Include="DTOS\lookups\MineralRightType.cs" />
+    <Compile Include="DTOS\lookups\ThirdPartyServiceTypeDto.cs" />
+    <Compile Include="DTOS\lookups\AgreementType.cs" />
+    <Compile Include="DTOS\lookups\ThirdPartyTypeDto.cs" />
+    <Compile Include="DTOS\lookups\TypeOfInformationDTO.cs" />
+    <Compile Include="DTOS\lookups\UnitsDTO.cs" />
+    <Compile Include="DTOS\lookups\VATRateLookUpDTO.cs" />
+    <Compile Include="DTOS\lookups\YearsDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Administration\Editors\AdminEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Administration\Editors\PesticideAdminContainerDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\Administration\Editors\PesticideAdminDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Administration\Editors\PesticideEntryDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\WoodlandSubsectionDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CafkfSummaries.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CafkfSummary.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CAFOverallDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CAFStrataSummaryDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CAFSummaryObjDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CATAnimalDamageDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CATBase.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATDeadWoodDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATFloraDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATHumanImpactsDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATInvasivesDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATLevelOfShrubRegenerationDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATLevelOfTreeRegenerationDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CATPlotObj.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\CATPlotObjBool.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATRegenerationTreeSpeciesDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATShrubSpeciesDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATTreeAgesDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATTreeHealthDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\ConditionAssessmentForm\Editor\Sections\CATTreeSpeciesDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ManagementPlanDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\ManagementUnitDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\OrdersSelectionCriterion.cs" />
+    <Compile Include="DTOS\ManagementPlans\PurchaseOrders\Editors\SupplierDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\PurchaseOrders\Editors\TenderDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\PurchaseOrders\Editors\TenderExpenditure.cs" />
+    <Compile Include="DTOS\ManagementPlans\ReferenceInformation\Editors\EvaluationEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\GrantContracts\Editors\GrantContractEditorDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Harvesting\Editors\HarvestingEditContainerDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Harvesting\Editors\HarvestingEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Objectives\Editors\ObjectivesContainerEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Objectives\Editors\ObjectivesDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\GrantContracts\Editors\PaymentSummaryDTO.cs" />
+    <Compile Include="DTOS\ComboBoxValue.cs" />
+    <Compile Include="DTOS\ManagementPlans\SummaryDescription\Editors\SummaryDesignationDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\TenureDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\WorkProgramme\Editors\ListObj.cs" />
+    <Compile Include="DTOS\ManagementPlans\WorkProgramme\Editors\WPExpenditureDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\WorkProgramme\Editors\BaseDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\WorkProgramme\Editors\WPSummaryDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Administration\Search\AdminListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\Editors\ConditionAssessmentEditorDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\Editors\ConditionAssessmentEditorEntryDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ConditionAssessment\Search\ConditionAssessmentListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\PurchaseOrders\Editors\ExpenditureCollectionEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\PurchaseOrders\Editors\ExpenditureDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\SummaryDescription\Editors\SummaryFeatureDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\GrantContracts\Search\GrantContractsListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Harvesting\Search\HarvestingListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\SalesOrders\Editors\IncomeCollectionEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Monitoring\Editors\MonitoringEditContainerDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Monitoring\Editors\MonitoringEditDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\SalesOrders\Editors\IncomeEdit.cs" />
+    <Compile Include="DTOS\ManagementPlans\SummaryDescription\Editors\SummaryConstraintDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\Monitoring\Search\MonitoringListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Objectives\Search\ObjectiveKFListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\PurchaseOrders\Search\PurchaseOrderListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\ReferenceInformation\Search\ReferenceInfoListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\SalesOrders\Search\SalesOrdersListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\SearchBase.cs" />
+    <Compile Include="DTOS\ManagementPlans\SummaryDescription\Editors\SummaryOverviewDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\SummaryDescription\Editors\SummaryDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\SummaryDescription\Search\SummaryDescriptiontListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\Harvesting\Search\HarvestListDTO.cs" />
+    <Compile Include="DTOS\ManagementPlans\WorkProgramme\Search\WorkProgrammeListDTO.cs" />
+    <Compile Include="DTOS\Property\AcquisitionUnitDto.cs" />
+    <Compile Include="DTOS\Property\AUID.cs" />
+    <Compile Include="DTOS\Property\subobjects\AcquistionUnitRelated\SubAcquisitionUnit.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\DirectoryInfoDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\InterestDisposed.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\PartDisposalDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\PartDisposalsDto.cs" />
+    <Compile Include="DTOS\lookups\RightsTypeDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\FundingDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\FundingDtos.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\ContactDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\ContactsDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\PublicRightOfWayDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\PublicRightsOfWayDto.cs" />
+    <Compile Include="DTOS\lookups\ShootingFishingType.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\StructureConditionDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\StructureDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\StructuresDto.cs" />
+    <Compile Include="DTOS\lookups\StructureTypeDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\BoundariesAndPlanDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\BoundariesAndPlansDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\DrainageRateDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\DrainageRatesDto.cs" />
+    <Compile Include="DTOS\Property\ExternalDesignationDto.cs" />
+    <Compile Include="DTOS\Property\DesignatorDto.cs" />
+    <Compile Include="DTOS\lookups\ExtDesignationTypeDto.cs" />
+    <Compile Include="DTOS\lookups\InternalDesignationTypeDto.cs" />
+    <Compile Include="DTOS\Property\InternalDesignationDto.cs" />
+    <Compile Include="DTOS\lookups\ManagedByDto.cs" />
+    <Compile Include="DTOS\PublicInformation\DirectoryInfo.cs" />
+    <Compile Include="DTOS\PublicInformation\PublicInformationExtendedInfoDto.cs" />
+    <Compile Include="DTOS\PublicInformation\PublicInformationSearchDto.cs" />
+    <Compile Include="DTOS\ReportDto.cs" />
+    <Compile Include="DTOS\ManagementPlans\ManagementUnitShortDto.cs" />
+    <Compile Include="DTOS\MenuDTO.cs" />
+    <Compile Include="DTOS\lookups\NonFSCTypeDto.cs" />
+    <Compile Include="DTOS\Property\MainSectionDto.cs" />
+    <Compile Include="DTOS\Property\PropertyDto.cs" />
+    <Compile Include="DTOS\Property\PropertyEditDto.cs" />
+    <Compile Include="DTOS\Property\PropertyFarmingDto.cs" />
+    <Compile Include="DTOS\Property\PropertyGeneralDetailsDto.cs" />
+    <Compile Include="DTOS\Property\PropertyLegalTitleDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\ThirdPartyRightDto.cs" />
+    <Compile Include="DTOS\Property\subobjects\Complex\ThirdPartyRightDtos.cs" />
+    <Compile Include="DTOS\lookups\TenureDto.cs" />
+    <Compile Include="DTOS\SettngsDto.cs" />
+    <Compile Include="DTOS\User\UserDto.cs" />
+    <Compile Include="DTOS\PublicInformation\PublicInformationDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\BioSecurityZoneDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\ControlMeasureDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FireIncidentHistory.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FirePotentialDamage.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FireRiskCollectionDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FireRiskDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FireRiskType.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FireSource.cs" />
+    <Compile Include="DTOS\Safety\Editors\FireAssessment\FireTakingHold.cs" />
+    <Compile Include="DTOS\Safety\Editors\FurtherAction\FollowOnActionTypeDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\FurtherAction\HazardActionDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\Lookup\HazardCategoryDtoLookup.cs" />
+    <Compile Include="DTOS\Safety\Editors\Parent\HazardDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\IncidentHistory\HazardIncidentDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\Lookup\HazardOwnershipDtoLookup.cs" />
+    <Compile Include="DTOS\Safety\Editors\Lookup\HazardTypeDtoLookup.cs" />
+    <Compile Include="DTOS\Safety\Editors\Parent\RiskAssessmentDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\HazardCollectionDto.cs" />
+    <Compile Include="DTOS\Safety\Editors\FurtherAction\SeverityProbabilityOfHarmDto.cs" />
+    <Compile Include="DTOS\Safety\SafetyDto.cs" />
+    <Compile Include="DTOS\Tasks\TaskCategoryDto.cs" />
+    <Compile Include="DTOS\TenderDto.cs" />
+    <Compile Include="DTOS\TreePlanting\PlantedByDto.cs" />
+    <Compile Include="DTOS\TreePlanting\PlantTypeDto.cs" />
+    <Compile Include="DTOS\TreePlanting\SubCompartmentLookupDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TPTempDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TreePlantAccessDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TreePlantDedicationsDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TreePlantDetailDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TreePlantDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TreePlantingSearchDto.cs" />
+    <Compile Include="DTOS\TreePlanting\TreePlantTerrainDto.cs" />
+    <Compile Include="DTOS\User\UserActions.cs" />
+    <Compile Include="DTOS\User\UserInfoDto.cs" />
+    <Compile Include="DTOS\User\UserRoleDto.cs" />
+    <Compile Include="DTOS\User\UserRoleSmallDto.cs" />
+    <Compile Include="EdEvent.cs" />
+    <Compile Include="EdMessage.cs" />
+    <Compile Include="ExtObservableRangeCollection.cs" />
+    <Compile Include="IChangeTracking.cs" />
+    <Compile Include="IComboBoxValue.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="InstanceData.cs" />
+    <Compile Include="IProperty.cs" />
+    <Compile Include="IPropertyRecord.cs" />
+    <Compile Include="PropertyBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DTOS\Tasks\EdTaskDto.cs" />
+    <Compile Include="Property.cs" />
+    <Compile Include="RadGridSelectionDto.cs" />
+    <Compile Include="StateContainer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MvvmHelpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Refractored.MvvmHelpers.1.3.2.47-beta\lib\netstandard1.0\MvvmHelpers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOS\Safety\Editors\BioSecurity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\WT.ED.Libs.csproj">
+      <Project>{05a3fcd3-b6be-4003-b69e-7711b10033c7}</Project>
+      <Name>WT.ED.Libs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
